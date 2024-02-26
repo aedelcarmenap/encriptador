@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<title>Encriptador de texto</title>
 </head>
 <body>
-    <section> 
-        <div class="conteiner">      
-            <div class="elem1"><img src="imagenes/Logo.png" class="logo"></div>
-            <div class="elem2"><textarea class="textarea" spellcheck="false">Ingrese el texto aquí</textarea></div>
-            <div class="elem3"><h6>solo letras minúsculas y sin acentos</h6></div>
-            <div class="elem4"><button class="encriptar">encriptar</button></div>
-            <div class="elem5"> <button class="desen">desencritar</button></div>
-            <div class="rectangulo"></div>
-            <div class="interior"></div>
-            <div><textarea class="interior" spellcheck="false">Ingrese el texto aquí</textarea></div>   
-            <div class="elem6"><img src="imagenes/Muñeco.png" class="muñeco"></div>
-            <div class="elem7"><h2>Ningún Mensaje fue Encontrado</h2>
-            <p>Ingresa el texto que desea encriptar o desencriptar</p></div>                
-            <div class="copy"><button class="c">copiar</button></div>
-            <div class="elem8"><p>&copy Copyright - Adela Eugenia Agudo Poncini - 2024</p> </div>
-        </div> 
-    </section>
+        <header>
+            <img src="imagenes/Logo.png" class="logo">
+        </header>
+        <main class="main">
+            <section>
+                <textarea id="texto-encriptado" class="campo-texto" placeholder="Ingrese el texto aquí" ></textarea>
+            <div class="alerta">
+                <img src="imagenes/alerta.png" alt="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="btn">
+                <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+            </section>
+            <section class="campomensaje">
+                    <textarea id="campo-mensaje" class="mensaje" ></textarea>
+                <div class="campo-muñeco">
+                    <img src="imagenes/Muñeco.png" alt="muñeco">
+                </div>
+                <div class="btncopiar">
+                        <input type="button" class="btn-copiar" value="copiar" id="copy">
+                        
+                </div>
+                  
+            </section>
+            </main>      
+              
+    <script src="app.js"></script>
 </body>
 </html>
 
