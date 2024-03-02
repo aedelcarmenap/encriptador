@@ -38,14 +38,19 @@ header{
     width: 680px;;
     height:288px;
     border: none;
-    background-color: #a8a8c2;
+    background-color: #f9f9f9;
     cursor:pointer;
     color: #14437c;
     font-size: 32px;
     font-weight: 400;
     font-family:"Inter", sans-serif;
-}
+    text-transform: lowercase;
+    }
 
+::placeholder{color: #14437c;}
+.text-area:focus{
+    outline: none;
+} 
 .alerta{
     position: absolute;
     top: 840px;
@@ -60,6 +65,7 @@ header{
     position: absolute;
     top: 885px;
     left:240PX;
+    display: flex;
 }
 
 .btnEncriptar{
@@ -80,12 +86,12 @@ header{
     width: 320px;
     height: 67px;
     border-radius: 24px;
-    background-color: #0a3871;
-    color:white;
+    background-color: #f3f3f3;
+    color:#0a3871;
     font-size: 16px;
     font-weight: 400;
     font-family: "Inter",sans-serif;
-    border: none;
+    border:solid;
     margin-right: 20px;
     cursor: pointer;
 }
@@ -96,8 +102,9 @@ header{
     height: 944px;
     top: 40px;
     left: 1000px;
-    background-color: #656565;
+    background-color: #5e748f;
     border-radius: 32px;
+    
     }
     
     .mensaje{
@@ -106,8 +113,21 @@ header{
         height: 740px;
         top: 70px;
         left: 30px;
-        background-color: #656565;
-    }
+        background-color: #f4f4f4;
+        background-image:url(./imagenes/Muñeco.png);
+        background-repeat: no-repeat;
+        background-position: 10%;
+        border: none;
+        border-radius: 10px;
+        font-size: 32px;
+        font-weight: 400;
+        font-family:"Inter", sans-serif;
+        margin-right: 20px;
+        color: #14437c;
+     }
+     .mensaje:focus{
+        outline: none;
+     }
 
 .btncopiar{
     position: absolute;
