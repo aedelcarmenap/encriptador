@@ -43,6 +43,8 @@ function copy() {
   function btnDesencriptar() {
     const texto = desencriptar(campo_texto.value);
     campo_mensaje.value = texto;
+    campo_texto.value="";
+    campo_mensaje.style.backgroundImage="none";
 
 }
 
