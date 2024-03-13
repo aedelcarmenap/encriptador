@@ -2,40 +2,39 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 <title>Encriptador de texto</title>
 </head>
-<body>
+<body >
         <header>
             <img src="imagenes/Logo.png" class="logo">
         </header>
         <main class="main">
-            <section>
+            <section class="in-flex">
                 <textarea id="texto-encriptado" class="campo-texto" placeholder="Ingrese el texto aquí" ></textarea>
-            <div class="alerta">
-                <img src="imagenes/alerta.png" alt="alerta">
-                <p>Solo letras minúsculas y sin acentos</p>
-            </div>
-            <div class="btn">
+                <div>
+                    <img src="imagenes/alerta.png" class="logoalerta"><p class="alerta">Solo letras minúsculas y sin acentos</p>  
+                </div>
+             <div class="btn">
                 <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
                 <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
             </section>
-            <section class="campomensaje">
+            <section class="in-flex">
                     <textarea id="campo-mensaje" class="mensaje" ></textarea>
-                </div>
-                <div class="btncopiar">
-                        <input type="button" class="btn-copiar" value="copiar" id="copy">
-                        
-                </div>
-                  
+                    <div>
+                    <input type="button" class="btn-copiar" value="copiar" id="copy">
+                    </div>         
             </section>
-            </main>      
-              
+            </main>   
+            <footer>
+            <p class="copyright">&copy Copyright Adela Agudo Poncini - 2024</p>
+            </footer> 
     <script src="app.js"></script>
 </body>
 </html>
