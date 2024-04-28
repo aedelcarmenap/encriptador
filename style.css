@@ -6,29 +6,41 @@
 }
 body{
     background:#f3f5fc;
+    overflow-x: hidden;
+    align-items: center;
+    padding-right:20px;
+
+  
 }
 
 .logo { 
     padding-top:40px;  
-    margin-left:40px;
+    margin-left:auto;
     width: 120px;
     height:48px;
+
 }
 
 .main{
     display:flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between; 
+    flex-direction:row;
+    gap:30px;
+    padding:0px 30px;
+
  }
 
 .campo-texto{
    border:none;
    color:#14437c;
    top: 168px;
-   margin-left: 20px;
+   margin-left:10px;
    width:370px;
    height: 240px;
    text-transform: lowercase;
-   font-size: 28px;
+   font-size: x-large;
    display: flex;
    
 }
@@ -41,22 +53,25 @@ body{
 .logoalerta{
     width: 20px;
     height: 20px;
-    margin-left: 40px;
+    margin-left: auto;
     margin-bottom:-15px;
             
 }
 .alerta{
     
     color:#495857;
-    font-size: 20px;
-     margin-left:80px; 
-     margin-bottom:0px;
+    font-size: medium;
+     margin-left:30px; 
+
     }
 
 .btn{
     margin-top:100px;
-    margin-left:40px;
+    margin-left:auto;
     display: flex; 
+    align-items: center;
+    justify-content:left;
+   
 }
 
 .btnEncriptar{
@@ -67,8 +82,8 @@ body{
     cursor:pointer;
     height:67px;
     width:328px;
-    font-size: 32px;
-  
+    font-size:x-large;
+ 
 }
 
 .btnDesencriptar{
@@ -80,22 +95,24 @@ body{
   height:67px;
   margin-left:30px;
   width:328px;
-  font-size: 32px;
+  font-size:x-large;
 }
 
 .in-flex{
   flex:1;  
-  min-width: 250px;     
+  min-width: 250px; 
+ 
 }
 .in-flex:first-child{
     flex:2;
-    padding:25px;
+    padding:auto;
     margin: 20px;
     margin-bottom: 0px;
     margin-left: 10%;
+  
 }
 .in-flex section{
-padding: 25px;
+padding: auto;
 margin-left: 10%;
 
 }
@@ -126,8 +143,9 @@ margin-left: 10%;
  cursor:pointer;
  height:67px;
  Width:336px;
- font-size: 32px;
- margin-left: 15%;
+ font-size: xx-large;
+
+
     }
 
     .copyright{
